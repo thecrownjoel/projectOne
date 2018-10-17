@@ -7,7 +7,7 @@ const ListItem = (props) => {
         props.items.map((item,i)=>(
 
             <TouchableOpacity
-                onPress={()=> alert('delete')}
+                onPress={()=> props.delete(i) }
                 key={i}
                 style={styles.listitem}
             >

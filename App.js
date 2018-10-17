@@ -21,6 +21,10 @@ onAddRandom = () => {
   })
 }
 
+onItemDelete = (i) => {
+  alert(i);
+}
+
 
   render() {
     return (
@@ -29,7 +33,7 @@ onAddRandom = () => {
         <Nav nameOfApp={this.state.nameOfApp} />
         <Generate add={this.onAddRandom} />
 
-        <ListItem items={this.state.random} />
+        <ListItem items={this.state.random} delete={this.onItemDelete} />
       
       </View>
       
